@@ -30,8 +30,7 @@ exec xset r rate 300 50 &
 exec setxkbmap -layout us -variant intl -option ctrl:nocaps &
 exec xwallpaper --zoom ~/Public/img/os/solid_green.png &
 exec xset s off -dpms &
-exec easyeffects --gapplication-service &
-exec xcape -e 'Control_L=Escape' 
+exec xcape -e "Control_L=Escape"
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.

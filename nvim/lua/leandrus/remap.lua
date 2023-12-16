@@ -1,3 +1,4 @@
+
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
@@ -16,6 +17,9 @@ end)
 vim.keymap.set("n", "<leader>svwm", function()
     require("vim-with-me").StopVimWithMe()
 end)
+
+vim.keymap.set("n", "<leader>c", [["_dP]])
+vim.keymap.set("n", "<leader>c", "<cmd>!compiler '%:p'<CR>")
 
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
@@ -47,5 +51,4 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
-
 
