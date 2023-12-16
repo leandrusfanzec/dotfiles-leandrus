@@ -42,6 +42,7 @@ source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 alias n="nvim ."
 alias la="ls -al"
 alias p="sudo pacman"
+alias lf="lfub"
 alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias ip='ip -color=auto'
