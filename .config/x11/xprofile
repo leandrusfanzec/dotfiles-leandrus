@@ -8,7 +8,8 @@ xset s off -dpms
 
 # Startup apps
 redshift -l -33.45694:-70.64827 -t 5700:2600 -b 1.0:0.7 -g 0.9 -m randr -v &
-xwallpaper --zoom ~/Public/img/os/333333.png &
 slstatus &
+xcompmgr &
 unclutter &
-
+easyeffects --gapplication-service &
+/home/lucas/.local/bin/newlook &

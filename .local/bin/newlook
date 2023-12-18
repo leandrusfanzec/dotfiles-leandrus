@@ -1,0 +1,9 @@
+#!/bin/sh
+
+
+wal -c 
+wal -i ~/Descargas/castle.png
+
+xwallpaper --zoom ~/Descargas/castle.png
+
+xdotool key super+F5
