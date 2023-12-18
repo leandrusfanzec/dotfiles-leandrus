@@ -2,8 +2,8 @@
 
 
 wal -c 
-wal -i ~/Descargas/castle.png
+wal -i ~/Public/img/os/castle.png
 
-xwallpaper --zoom ~/Descargas/castle.png
+xwallpaper --zoom ~/Public/img/os/castle.png
 
 xdotool key super+F5
