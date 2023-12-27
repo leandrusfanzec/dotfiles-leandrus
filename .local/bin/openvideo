@@ -1,0 +1,6 @@
+#!/bin/sh
+
+
+
+
+mpv --ytdl-format=22 $( xclip -o )
