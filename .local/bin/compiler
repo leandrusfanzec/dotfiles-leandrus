@@ -46,6 +46,7 @@ case "$ext" in
 			pandoc -t ms --highlight-style=kate -s -o "$base".pdf "$file"
 		fi ; ;;
 	mom) preconv "$file" | refer -PS -e | groff -mom -kept -T pdf > "$base".pdf ;;
+    mandoc) preconv "$file" | refer -PS -e | groff -mandoc -kept -T pdf > "$base".pdf ;;
 	ms) preconv "$file" | refer -PS -e | groff -me -ms -kept -T pdf > "$base".pdf ;;
 	org) emacs "$file" --batch -u "$USER" -f org-latex-export-to-pdf ;;
 	py) python "$file" ;;

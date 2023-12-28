@@ -1,0 +1,13 @@
+#!/bin/sh
+
+killall picom
+
+# use a file to track grayscale mode
+if grep -q '1' /tmp/grayscale; then
+    echo 0 > /tmp/grayscale 
+else
+    sleep 0.1
+    picom --backend glx --window-shader-fg /home/lucas/Public/shader.glsl;
+    focus-exclude="x = 0 && y = 0 && override_redirect = true";
+    echo 1 > /tmp/grayscale
+fi

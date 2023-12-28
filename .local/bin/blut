@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Función para conectar un dispositivo por dirección MAC usando bluetoothctl
+connect_device() {
+    bluetoothctl <<EOF
+    connect $1
+    exit
+EOF
+}
+
+# Opciones para dmenu
+options="Audífonos\nParlante"
+
+# Mostrar opciones utilizando dmenu
+chosen_option=$(echo "$options" | dmenu -p "Selecciona un dispositivo:")
+
+# Comprobar la selección y conectar el dispositivo correspondiente
+case $chosen_option in
+    "Audífonos")
+        connect_device "3F:98:3D:CE:1D:72"
+        ;;
+    "Parlante")
+        connect_device "F8:5C:7D:61:E5:13"
+        ;;
+    *)
+        echo "Selección inválida."
+        ;;
+esac
