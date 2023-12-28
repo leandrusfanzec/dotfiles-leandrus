@@ -16,6 +16,9 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("n", "<leader>s", [[:%s//g<Left><Left>]])
 
+vim.keymap.set("n", ",,", ":keepp /<++><CR>ca<")
+vim.keymap.set("i", ",,", "<Esc>:keepp /<++><CR>ca<")
+
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)

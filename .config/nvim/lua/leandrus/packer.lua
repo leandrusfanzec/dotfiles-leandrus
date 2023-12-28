@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
     use('theprimeagen/harpoon')
+    use {'ojroques/nvim-hardline'}
 
     use({
         'mvllow/modes.nvim',
